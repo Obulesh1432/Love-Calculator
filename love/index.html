@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/05/59/67/21/360_F_559672162_8L6mmVb5YYwOikKMZYKxEUmHDfMDeWWq.jpg" border="50px">
+    <link rel="stylesheet" href="love.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h2>Love Calculator</h2>
+        <input type="text" id="uname" name="" placeholder="Your Name">
+        <input type="text" id="pname" name="" placeholder="Partner Name">
+        <button onclick="percentage()">Submit</button>
+        <div class="container1">
+        <input type="text" name="" id="perc">
+        </center>
+    </div>
+    </div>
+</body>
+<script>
+    function percentage()
+    {
+        var uname=document.getElementById('uname').value;
+        var pname=document.getElementById('pname').value;
+if(uname=="")
+{
+    alert("enter your name");
+}
+else if(pname=="")
+{
+    alert("enter your partner name")
+}
+else
+{
+var l=Math.random()*100;
+l=Math.floor(l);
+document.getElementById('perc').value=l+"%";
+}
+    }
+</script>
+</html>
